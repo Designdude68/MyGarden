@@ -1,0 +1,22 @@
+html{
+	color-scheme:light dark;
+	--background: light-dark(#d6ca93, #26373d);
+	--color: light-dark(#2f3e44, #998073);
+	--accent-color: light-dark(#f69a79, #1a6884);
+	}
+
+/* MARK: fonts */
+@font-face {
+  font-family: 'Seraphs';
+  src: url('font/SeraphsVF.woff2'); /* IE9 Compat Modes */
+  src: url('font/SeraphsVF.woff2') format('woff'), /* Modern Browsers */
+}
+
+li .p{
+font-variation-settings: "wght" 175, "SRFS" 30;
+  font-size: clamp(1.2rem, 0.1vw + 1.2rem, 1.8rem);
+	line-height: .9rem;
+	margin: .3rem 0rem .6rem 0rem;
+	color: var(--color);
+	grid-row-start: 2;
+}
